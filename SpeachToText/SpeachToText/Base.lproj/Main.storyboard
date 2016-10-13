@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="语音识别" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3RJ-dP-wQw">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Result" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hU4-nl-m2I">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="WFJ-fS-oSc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzG-Kj-pEV">
+                                <state key="normal" title="开始识别"/>
+                                <connections>
+                                    <action selector="microphoneClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Yp-KS-uEy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hU4-nl-m2I" secondAttribute="trailing" constant="52" id="D2K-ru-5dM"/>
+                            <constraint firstItem="3RJ-dP-wQw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="104" id="H2O-W0-QRF"/>
+                            <constraint firstItem="OzG-Kj-pEV" firstAttribute="top" secondItem="hU4-nl-m2I" secondAttribute="bottom" constant="96" id="HYG-8E-Bnf"/>
+                            <constraint firstItem="3RJ-dP-wQw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="55" id="gQF-8G-HLa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3RJ-dP-wQw" secondAttribute="trailing" constant="104" id="oAW-we-ne5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OzG-Kj-pEV" secondAttribute="trailing" constant="101" id="rH0-8z-GPf"/>
+                            <constraint firstItem="hU4-nl-m2I" firstAttribute="top" secondItem="3RJ-dP-wQw" secondAttribute="bottom" constant="50" id="rks-aI-ySQ"/>
+                            <constraint firstItem="hU4-nl-m2I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="sLW-Y9-K2Y"/>
+                            <constraint firstItem="OzG-Kj-pEV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="vGU-yC-taZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="recognizeBtn" destination="OzG-Kj-pEV" id="wsf-O1-KoM"/>
+                        <outlet property="resultTextView" destination="hU4-nl-m2I" id="txS-kv-jDF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="-161.46926536731635"/>
+        </scene>
+    </scenes>
+</document>
