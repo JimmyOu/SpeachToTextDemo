@@ -7,28 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A622B9201D9BA0660010EB59 /* JOSpeechManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A622B91F1D9BA0660010EB59 /* JOSpeechManager.m */; };
 		A66EA6D51D9A536700883144 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A66EA6D41D9A536700883144 /* main.m */; };
 		A66EA6D81D9A536700883144 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A66EA6D71D9A536700883144 /* AppDelegate.m */; };
-		A66EA6DB1D9A536700883144 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66EA6DA1D9A536700883144 /* ViewController.m */; };
 		A66EA6DE1D9A536700883144 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66EA6DC1D9A536700883144 /* Main.storyboard */; };
 		A66EA6E01D9A536700883144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A66EA6DF1D9A536700883144 /* Assets.xcassets */; };
 		A66EA6E31D9A536700883144 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66EA6E11D9A536700883144 /* LaunchScreen.storyboard */; };
+		A692D8FB1DB8635500187FEA /* JOSiriManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A692D8FA1DB8635500187FEA /* JOSiriManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A622B91E1D9BA0660010EB59 /* JOSpeechManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOSpeechManager.h; sourceTree = "<group>"; };
-		A622B91F1D9BA0660010EB59 /* JOSpeechManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOSpeechManager.m; sourceTree = "<group>"; };
 		A66EA6D01D9A536700883144 /* SpeachToText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeachToText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66EA6D41D9A536700883144 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A66EA6D61D9A536700883144 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A66EA6D71D9A536700883144 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A66EA6D91D9A536700883144 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A66EA6DA1D9A536700883144 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A66EA6DD1D9A536700883144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A66EA6DF1D9A536700883144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A66EA6E21D9A536700883144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A66EA6E41D9A536700883144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A692D8F91DB8635500187FEA /* JOSiriManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOSiriManager.h; sourceTree = "<group>"; };
+		A692D8FA1DB8635500187FEA /* JOSiriManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOSiriManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,8 +42,8 @@
 		A622B91D1D9BA0660010EB59 /* Speach */ = {
 			isa = PBXGroup;
 			children = (
-				A622B91E1D9BA0660010EB59 /* JOSpeechManager.h */,
-				A622B91F1D9BA0660010EB59 /* JOSpeechManager.m */,
+				A692D8F91DB8635500187FEA /* JOSiriManager.h */,
+				A692D8FA1DB8635500187FEA /* JOSiriManager.m */,
 			);
 			path = Speach;
 			sourceTree = "<group>";
@@ -73,8 +70,6 @@
 				A622B91D1D9BA0660010EB59 /* Speach */,
 				A66EA6D61D9A536700883144 /* AppDelegate.h */,
 				A66EA6D71D9A536700883144 /* AppDelegate.m */,
-				A66EA6D91D9A536700883144 /* ViewController.h */,
-				A66EA6DA1D9A536700883144 /* ViewController.m */,
 				A66EA6DC1D9A536700883144 /* Main.storyboard */,
 				A66EA6DF1D9A536700883144 /* Assets.xcassets */,
 				A66EA6E11D9A536700883144 /* LaunchScreen.storyboard */,
@@ -164,9 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A622B9201D9BA0660010EB59 /* JOSpeechManager.m in Sources */,
-				A66EA6DB1D9A536700883144 /* ViewController.m in Sources */,
 				A66EA6D81D9A536700883144 /* AppDelegate.m in Sources */,
+				A692D8FB1DB8635500187FEA /* JOSiriManager.m in Sources */,
 				A66EA6D51D9A536700883144 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
